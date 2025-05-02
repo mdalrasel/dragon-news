@@ -1,2 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @import "tailwindcss";
-@plugin "daisyui"
+@plugin "daisyui"{
+    themes: light --default;
+}
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    --color-primary: #9F9F9F;
+    --color-secondary: #D72050;
+    --color-base-200: #F3F3F3;
+    --color-base-300: #E7E7E7;
+
+  }
+
+*{
+    font-family: "Poppins", sans-serif;  
+}
+.active{
+    text-decoration: underline;
+    color: blue;
+}
+a.active{
+    text-decoration: none;
+    @apply bg-base-300
+
+}
